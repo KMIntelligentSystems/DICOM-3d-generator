@@ -1,0 +1,109 @@
+.container{
+
+    height: 0;
+    position: relative;
+}
+
+.container_bars{
+
+  height: 0;
+  position: relative;
+  /*display: none;*/
+}
+
+
+.chart {
+   width: 900px; height: 600px;
+    margin: 20px 10px 50px 10px;
+    position: relative;
+    border: 2px solid blue;
+    display: inline-block;
+    top: 0; left: 0;
+   /* width: 100%; height: 100%;*/
+  }
+
+  .content{
+      position: absolute;
+      width: 900;
+      height: 600;
+      /*line-height: 200;*/
+  }
+
+  .graph {
+	width: 900px;
+	height: 600px;
+	border: 1px solid #aeaeae;
+    background-color: #eaeaea;
+    position: absolute;
+}
+.bar {
+	width: 95px;
+	margin: 1px;
+	display: inline-block;
+	position: relative;
+	background-color: #aeaeae;
+  vertical-align: baseline;
+  bottom: -277px;
+}
+  .line{
+    transform-origin: 0 100%;
+    height: 3px; /* Line width of 3 */
+    background: #000; /* Black fill */
+    position: absolute;
+    margin:30px;
+  }
+
+ .line:after {
+	content: "";
+	width: 10px;
+	height: 10px;
+	background: #30353b;
+	border-radius: 5px;
+	position: absolute;
+	top: -6px;
+}
+
+.line:after {
+	right: 0;
+}
+
+  .chart:after { 
+     content: ' ';
+     display: block; 
+     position: relative;
+     border: 1px solid black;
+     top: 608px; left: -2px;
+  }
+
+  
+  .tick {
+    border-left: 2px solid black;
+    height: 18px; top: 608px;
+    position: absolute;
+  }
+  .tick:nth-child(1)  { left: -2px;  }
+  .tick:nth-child(2)  { left: 98px;  }
+  .tick:nth-child(3)  { left: 198px; }
+  .tick:nth-child(4)  { left: 298px; }
+  .tick:nth-child(5)  { left: 398px; }
+  .tick:nth-child(6)  { left: 498px; }
+  .tick:nth-child(7)  { left: 598px; }
+  .tick:nth-child(8)  { left: 698px; }
+  .tick:nth-child(9)  { left: 798px; }
+  .tick:nth-child(10) { left: 898px; }
+  .tick:nth-child(3n+1) { border-left: 4px solid darkred; height: 24px; }
+  .tick > span {
+    position: relative;
+    width: 10px; left: -5px; top: 26px;
+    font: 1em Arial, Helvetica, sans-serif;
+  }
+  .tick:nth-child(3n+1) > span { left: -6px; font-weight: bold; }
+
+  .circle {
+	border-radius: 50%;
+	width: 10px;
+    height: 10px; 
+    position: absolute;
+    background:#000;
+	/* width and height can be anything, as long as they're equal */
+}

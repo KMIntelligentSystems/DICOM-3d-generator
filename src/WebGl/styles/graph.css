@@ -1,0 +1,34 @@
+ul.graph
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+	
+ul.graph li
+{
+	margin-bottom: .5em;
+	padding: .2em;
+	background: #600;
+	color: #fff;
+}
+
+ul.graph li.percent20
+{
+	background: lightblue repeat-y 20% 0;
+}
+	
+ul.graph li.percent40
+{
+	background: lightblue repeat-y 40% 0;
+}
+	
+ul.graph li.percent60
+{
+	background: lightblue repeat-y 60% 0;
+}
+	
+ul.graph li.percent80
+{
+	background: lightblue repeat-y 80% 0;
+}
